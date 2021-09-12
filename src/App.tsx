@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import ParagraphList from "./Paragraph_list";
 import SayHello from "./SayHello";
+import Parent from "./ControlledComponents/Parent";
 
 function App() {
   let PLFoo = [1,2,3,4].map((ziffer) =>{
@@ -28,6 +29,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Parent  />
         <ParagraphList foo={PLFoo} />
         <SayHello foo={'was denn'} giveYouClbck={getChild} />
         <button onClick={tellChild} >Er soll was sagen</button>
