@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.branches{
+  height: max-content;
+  min-height: 150px;
+  background: #a6a676;
+
+}
+.outer_child{
+  background: #5a4e6f;
+  margin: 2px ;
+  padding: 2px ;
+}

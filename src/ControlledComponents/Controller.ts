@@ -1,14 +1,27 @@
+
 export default class Controller{
 
     protected zahl: number = 0 ;
 
-    public update(newZahl: number){
-        this.zahl = newZahl ;
+    constructor(private branchIndex: number) {
+    }
+
+    public getBranchindex(){
+        return this.branchIndex ;
+    }
+
+    public increment() {
+        this.zahl++;
     }
 
     public getZahl(){
-        return this.zahl * 2 ;
+        console.log('getZahl, zahl: ' + this.zahl) ;
+        return this.zahl ;
     }
 
-
+    public updateZahl(zahl: number){
+        console.log('Controller updateZahl ' + this.zahl + ' zu ' + zahl) ;
+        this.zahl = zahl ;
+        console.log('Controller Zahl nun upgedatet zu ' + this.zahl) ;
+    }
 }
